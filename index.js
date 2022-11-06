@@ -20,8 +20,8 @@ app.use(express.urlencoded({extended: false}))
 app.use(cookieParser())
 
 //routes
-app.use('/api/user', require('./routes/userRoutes'))
-app.use('/api/resume', require('./routes/resumeRoutes'))
+app.use('/user', require('./routes/userRoutes'))
+app.use('/resume', require('./routes/resumeRoutes'))
 
 app.all('*', (req, res) => {
    res.status(404).json({ status: false, message: 'resource not found'})
