@@ -1,4 +1,4 @@
-const allowedOrigins = ['https://resume-k20t.onrender.com']
+const allowedOrigins = ['https://resume-builder-tpvd.onrender.com/']
 
 const corsOptions = {
    origin: (origin, callback) => {
